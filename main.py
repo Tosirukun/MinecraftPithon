@@ -205,6 +205,7 @@ class Window(pyglet.window.Window):
         glLoadIdentity()  # 変換処理の累積を消去
 
 if __name__ == '__main__':
+    pyglet.options['shadow_window'] = False
     window = Window(width=1280, height=720, caption='Minecraft Py', resizable=True)
     glClearColor(0.5, 0.7, 1, 1)  # クリア時の色を空色に設定
     glEnable(GL_DEPTH_TEST)
