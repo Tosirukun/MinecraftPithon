@@ -17,6 +17,7 @@ class Block:
 
     def addNormalBlocks(self):
         self.addNewBlock("dirt", "dirt", "dirt", "dirt", "dirt", "dirt", "dirt")
+        self.addNewBlock("stone", "stone", "stone", "stone", "stone", "stone", "stone")
         self.addNewBlock("test001", "grass_side", "grass_side", "dirt", "dirt", "grass_side", "grass_side")
 
     def addNewBlock(self, sysId, a, b, c, d, e, f):
