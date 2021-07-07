@@ -13,7 +13,11 @@ class World:
         self.blockManager = blockmanager
         for i in range(20):
             for ii in range(20):
-                self.addBatch(x=i, y=0, z=ii, sysId="dirt")
+                self.addBatch(x=i, y=20, z=ii, sysId="test001")
+                for iii in range(3):
+                    self.addBatch(x=i, y=19-iii, z=ii, sysId="dirt")
+                for iiii in range(10):
+                    self.addBatch(x=i, y=16-iiii, z=ii, sysId="stone")
 
     def addBatch(self, sysId="null", x = 0, y = 0, z = -1):
         blockdata = self.blockManager.getBlock(sysId)
